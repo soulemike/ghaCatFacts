@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Cat fact step
         id: hello
-        uses: soulemike/ghaCatFacts
+        uses: soulemike/ghaCatFacts@23234a0faebb51e240001c2fd61aeb43cf00ffaa
         with:
           who-to-greet: Mona the Octocat
 
