@@ -1,5 +1,8 @@
-name: Cat Facts
+name: Cat Facts Action
 description: Share a random cat fact
+branding:
+  icon: 'info'
+  color: 'white'
 
 outputs:
   fact: # id of output
