@@ -1,0 +1,6 @@
+name: Cat Facts
+description: Share a random cat fact
+
+runs:
+  using: node20
+  main: dist/index.js
