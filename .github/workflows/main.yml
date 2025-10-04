@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  catFactsJob:
+    name: A job to share a cat fact
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cat fact step
+        id: hello
+        uses: soulemike/ghaCatFacts
+        with:
+          who-to-greet: Mona the Octocat
+
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
