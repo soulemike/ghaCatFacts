@@ -1,15 +1,9 @@
 name: Cat Facts
 description: Share a random cat fact
 
-inputs:
-  who-to-greet: # id of input
-    description: Who to greet
-    required: true
-    default: World
-
 outputs:
-  time: # id of output
-    description: The time we greeted you
+  fact: # id of output
+    description: The cat fact
 
 runs:
   using: node20

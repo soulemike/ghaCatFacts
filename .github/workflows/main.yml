@@ -10,11 +10,9 @@ jobs:
 
     steps:
       - name: Cat fact step
-        id: hello
+        id: fact
         uses: soulemike/ghaCatFacts@23234a0faebb51e240001c2fd61aeb43cf00ffaa
-        with:
-          who-to-greet: Mona the Octocat
 
       # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Get the fact
+        run: echo "${{ steps.fact.outputs.fact }}"
