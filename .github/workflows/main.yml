@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Cat fact step
         id: fact
-        uses: soulemike/ghaCatFacts@23234a0faebb51e240001c2fd61aeb43cf00ffaa
+        uses: soulemike/ghaCatFacts@97089ba94ecf9abd845814802de67af5aa93ef83
 
       # Use the output from the `hello` step
       - name: Get the fact
